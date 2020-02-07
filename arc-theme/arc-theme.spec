@@ -17,12 +17,9 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk3-devel
 BuildRequires:	gtk-murrine-engine
-BuildRequires:	inkscape
+BuildRequires:	inkscape <= 0.92
 BuildRequires:	optipng
 BuildRequires:	sassc
-BuildRequires:	gnome-themes-extra
-BuildRequires:	filesystem
-BuildRequires:	pkgconfig
 
 Requires:	filesystem
 Requires:	gnome-themes-extra
