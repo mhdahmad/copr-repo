@@ -20,6 +20,9 @@ BuildRequires:	gtk-murrine-engine
 BuildRequires:	inkscape
 BuildRequires:	optipng
 BuildRequires:	sassc
+BuildRequires:	gnome-themes-extra
+BuildRequires:	filesystem
+BuildRequires:	pkgconfig
 
 Requires:	filesystem
 Requires:	gnome-themes-extra
