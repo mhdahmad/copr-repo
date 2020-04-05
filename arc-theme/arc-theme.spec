@@ -33,6 +33,7 @@ Requires:	gtk-murrine-engine
 
 %prep
 %autosetup -n %{name}-%{branch}
+%{_bindir}/autoreconf -fiv
 
 %build	
 %configure %{common_configure}
