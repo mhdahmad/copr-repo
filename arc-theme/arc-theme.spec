@@ -6,12 +6,12 @@
 
 Name:		arc-theme
 Version:	20200328
-Release:	3%{?dist}
+Release:	1%{?dist}
 Summary:	A flat theme with transparent elements
 
 License:	GPLv3+
 URL:		https://github.com/jnsh/%{name}
-Source0:	%{url}/archive/master.zip
+Source0:	%{url}/archive/master.zip#/%{name}-%{version}.tar.gz
 
 BuildArch:	noarch
 
