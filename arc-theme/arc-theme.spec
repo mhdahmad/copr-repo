@@ -1,15 +1,17 @@
-%global common_configure --with-gnome-shell=3.34 --disable-cinnamon --disable-unity --disable-xfwm --disable-plank --disable-openbox
+%global common_configure --with-gnome-shell=3.36 --disable-cinnamon --disable-unity --disable-xfwm --disable-plank --disable-openbox --disable-lighter
 
 %global common_desc Arc is a flat theme with transparent elements for GTK 3, GTK 2 and GNOME Shell, Unity, Pantheon, Xfce, MATE, Cinnamon, Budgie Desktop.
 
+%global         branch master
+
 Name:		arc-theme
-Version:	20190917
+Version:	20200328
 Release:	3%{?dist}
 Summary:	A flat theme with transparent elements
 
 License:	GPLv3+
-URL:		https://github.com/arc-design/%{name}
-Source0:	%{url}/archive/%{version}.tar.gz
+URL:		https://github.com/jnsh/%{name}
+Source0:	%{url}/archive/master.zip
 
 BuildArch:	noarch
 
@@ -20,7 +22,7 @@ BuildRequires:	gtk-murrine-engine
 BuildRequires:	inkscape < 1.0
 BuildRequires:	optipng
 BuildRequires:	sassc
-BuildRequires:  pkgconfig
+BuildRequires:  pkgconf
 
 Requires:	filesystem
 Requires:	gnome-themes-extra
@@ -28,10 +30,9 @@ Requires:	gtk-murrine-engine
 
 %description
 %{common_desc}
-	
+
 %prep
-%autosetup -p 1
-%{_bindir}/autoreconf -fiv
+%autosetup -n %{name}-%{branch}
 
 %build	
 %configure %{common_configure}
@@ -39,13 +40,16 @@ Requires:	gtk-murrine-engine
 
 %install	
 %make_install
-	
+
 %files
 %license AUTHORS COPYING
 %doc README.md
 %{_datadir}/themes/*
-	
+
 %changelog
+
+* Mon Apr 6 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
+- Switch to new repository jnsh/arc-theme
 
 * Fri Feb 7 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
 - New Version
