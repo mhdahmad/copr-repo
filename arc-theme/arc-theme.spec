@@ -1,4 +1,4 @@
-%global common_configure --with-gnome-shell=3.36 --disable-cinnamon --disable-unity --disable-xfwm --disable-plank --disable-openbox --disable-lighter
+%global common_configure --with-gnome-shell=3.34 --disable-cinnamon --disable-unity --disable-xfwm --disable-openbox --disable-lighter
 
 %global common_desc Arc is a flat theme with transparent elements for GTK 3, GTK 2 and GNOME Shell, Unity, Pantheon, Xfce, MATE, Cinnamon, Budgie Desktop.
 
@@ -48,6 +48,8 @@ Requires:	gtk-murrine-engine
 %{_datadir}/themes/*
 
 %changelog
+* Sun Apr 12 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
+- Switch to new repository jnsh/arc-theme - gnome 3.34
 
 * Mon Apr 6 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
 - Switch to new repository jnsh/arc-theme
