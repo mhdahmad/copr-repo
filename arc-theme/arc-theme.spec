@@ -5,7 +5,7 @@
 %global         branch master
 
 Name:		arc-theme
-Version:	20200328
+Version:	20190917+git20200413
 Release:	1%{?dist}
 Summary:	A flat theme with transparent elements
 
@@ -48,6 +48,9 @@ Requires:	gtk-murrine-engine
 %{_datadir}/themes/*
 
 %changelog
+* Wed Apr 15 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
+- New Version
+
 * Sun Apr 12 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
 - Switch to new repository jnsh/arc-theme - gnome 3.34
 
