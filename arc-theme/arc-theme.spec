@@ -1,11 +1,11 @@
-%global common_configure --with-gnome-shell=3.34 --disable-cinnamon --disable-unity --disable-xfwm --disable-openbox --disable-lighter
+%global common_configure --with-gnome-shell=3.36 --disable-cinnamon --disable-unity --disable-xfwm --disable-openbox --disable-lighter
 
 %global common_desc Arc is a flat theme with transparent elements for GTK 3, GTK 2 and GNOME Shell, Unity, Pantheon, Xfce, MATE, Cinnamon, Budgie Desktop.
 
 %global         branch master
 
 Name:		arc-theme
-Version:	20190917+git20200413
+Version:	20190917+git20200417
 Release:	1%{?dist}
 Summary:	A flat theme with transparent elements
 
@@ -19,7 +19,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk3-devel
 BuildRequires:	gtk-murrine-engine
-BuildRequires:	inkscape < 1.0
+BuildRequires:	inkscape
 BuildRequires:	optipng
 BuildRequires:	sassc
 BuildRequires:  pkgconf
@@ -48,6 +48,9 @@ Requires:	gtk-murrine-engine
 %{_datadir}/themes/*
 
 %changelog
+* Mon Apr 27 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
+- New Version
+
 * Wed Apr 15 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
 - New Version
 
