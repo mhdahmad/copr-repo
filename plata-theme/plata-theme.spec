@@ -6,7 +6,7 @@ License:        GPL 2.0 ans SA 4.0
 URL:            %{git_url}
 
 Version:        0.9.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Source0:        %{git_url}/-/archive/%{version}/%{name}-%{version}.tar.gz       
 
 BuildArch:      noarch
@@ -14,7 +14,7 @@ BuildArch:      noarch
 BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  procps
-BuildRequires:  inkscape < 1.0
+BuildRequires:  inkscape >= 0.91
 BuildRequires:  parallel
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(libxml-2.0)
@@ -51,7 +51,12 @@ Summary:        A Gtk+ theme based on Material Design Refresh.
 --enable-plank \
 --enable-telegram \
 --enable-tweetdeck \
---enable-gtk_next
+--enable-gtk_next \
+--disable-cinnamon \
+--disable-flashback \
+--disable-xfce \
+--disable-mate \
+--disable-openbox
 %make_build
 
 %install
