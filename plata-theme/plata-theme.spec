@@ -86,6 +86,9 @@ Summary:        A Gtk+ theme based on Material Design Refresh.
 %{_datadir}/*
 
 %changelog
+* Sun May 03 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
+- New Version
+
 * Fri Apr 10 2020 Muhammad Ahmad <mhdxahmad93@gmail.com> 0.9.7
 - New Version
 
