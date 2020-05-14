@@ -32,7 +32,7 @@ Requires:	gtk-murrine-engine
 %{common_desc}
 
 %prep
-%autosetup -n %{name}-%{branch}
+%autosetup -n %{name}-%{version}
 %{_bindir}/autoreconf -fiv
 
 %build	
