@@ -5,13 +5,13 @@
 %global         branch master
 
 Name:		arc-theme
-Version:	20190917+git20200502
+Version:	20200513
 Release:	1%{?dist}
 Summary:	A flat theme with transparent elements
 
 License:	GPLv3+
 URL:		https://github.com/jnsh/%{name}
-Source0:	%{url}/archive/master.zip#/%{name}-%{version}.tar.gz
+Source0:	%{url}/archive/${version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildArch:	noarch
 
@@ -48,6 +48,9 @@ Requires:	gtk-murrine-engine
 %{_datadir}/themes/*
 
 %changelog
+* Thu May 14 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
+- New Version
+
 * Sun May 03 2020 Muhammad Ahmad <mhdxahmad93@gmail.com>
 - New Version
 
