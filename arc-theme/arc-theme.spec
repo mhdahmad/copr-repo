@@ -11,7 +11,7 @@ Summary:	A flat theme with transparent elements
 
 License:	GPLv3+
 URL:		https://github.com/jnsh/%{name}
-Source0:	%{url}/archive/${version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:	%{url}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildArch:	noarch
 
